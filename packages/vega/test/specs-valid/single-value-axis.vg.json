@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v6.json",
+  "padding": 5,
+  "height": 100,
+  "width": 100,
+  "scales": [
+    {
+      "name": "s",
+      "type": "linear",
+      "domain": [0.5, 0.5],
+      "range": [{"signal": "height"}, 0],
+      "zero": false
+    }
+  ],
+  "axes": [
+    {
+      "scale": "s",
+      "orient": "left",
+      "grid": true
+    }
+  ]
+}

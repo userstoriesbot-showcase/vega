@@ -99,6 +99,7 @@
   "scatter-plot-guides",
   "scatter-plot-heatmap",
   "shift-select",
+  "single-value-axis",
   "splom-inner",
   "splom-outer",
   "stacked-area",

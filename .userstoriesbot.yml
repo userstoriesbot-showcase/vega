@@ -1,0 +1,12 @@
+# Showcase fork only (never part of an upstream pull request).
+version: 1
+app:
+  install: "DISABLE_POSTINSTALL_SCRIPT=1 npm ci && npm run build"
+  start: python3 -m http.server {port} --bind 0.0.0.0 --directory packages/vega
+  url: http://localhost:{port}
+  readyPath: /test/
+  readyStatus: 200
+  runtime: node22
+demo:
+  maxVideos: 1
+  beforePass: true
